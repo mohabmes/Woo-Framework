@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Woo Framework</title>
+	<link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="woo.css">
+    <style>
+		.intro{
+			display:block;
+			font-family: 'Indie Flower', cursive;
+			font-size:4em;
+			text-align:center;
+			margin-bottom:0;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 500;
+			margin: 0;
+			margin: 10px 0;
+			
+		}
+		.full{
+			margin-bottom: 10px;
+			padding: 15px;
+			width:100%;
+			border-bottom:solid 1px #B3B3B3;
+			background-color: #fafafa;
+			border:solid 1px #B3B3B3;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<div style="margin:100px 0;">
+	<p class="intro">Woo Framework</p>
+	<p style="text-align:center;">Responsive Front-End Framework</p>
+</div>
+
+
+<!------------------------ Image Slideshow ------------------------>
+<div class="full">
+	<h4>Image Slideshow</h4>
+		<div class="slideshow">
+			<div class="slide">
+				<img src="https://i.imgur.com/5vLFVQJ.jpg" >
+				<span>Caption One Text</span>
+			</div>
+			<div class="slide">
+				<img src="https://i.imgur.com/ERtO979.jpg" >
+				<span>Caption Two Text</span>
+			</div>
+			<div class="slide">
+				<img src="https://i.imgur.com/yoiN6Kz.jpg" >
+				<span>Caption Three Text</span>
+			</div>
+
+			<div>
+				<span class="dot active" onclick="showSlide(0)"></span>
+				<span class="dot" onclick="showSlide(1)"></span>
+				<span class="dot" onclick="showSlide(2)"></span>
+			</div>
+		</div>	
+</div>
+
+<!------------------------ Pricing Tables ------------------------>
+<div class="full">
+	<h4>Pricing Tables</h4>
+	<div class="clearfix">
+		<div class="pricing">
+			<p>Basic</p>
+			<ul>
+				<li>$9.99 / month</li>
+				<li>300 requests</li>
+				<li>All Core Price History</li>
+				<li>Basic company overviews</li>
+			</ul>
+			<a href="#"><span>Buy Now</span></a>
+		</div>
+		<div class="pricing">
+			<p>Premium</p>
+			<ul>
+				<li>$49.99 / month</li>
+				<li>1000 requests</li>
+				<li>All Core Price History</li>
+				<li>Pro company overviews</li>
+			</ul>
+			<a href="#"><span>Buy Now</span></a>
+		</div>
+		<div class="pricing">
+			<p>Pro</p>
+			<ul>
+				<li>$29.99 / month</li>
+				<li>600 requests</li>
+				<li>All Core Price History</li>
+				<li>Basic company overviews</li>
+			</ul>
+			<a href="#"><span>Buy Now</span></a>
+		</div>
+	</div>
+</div>
+<!------------------------ Horizontal Chart ------------------------>
+<div class="full ">
+	<h4>Horizontal Chart</h4>
+		<div class="chart">
+			<span style="width:30%">IE - 30%</span>
+		</div>
+		<div class="chart">
+			<span style="width:80%">Opera - 80%</span>
+		</div>
+		<div class="chart">
+			<span style="width:50%">Chrome - 50%</span>
+		</div>
+		<div class="chart">
+			<span style="width:70%">Firefox - 70%</span>
+		</div>
+</div>
+<div class="full">
+	<h4>Horizontal Chart</h4>
+	<div class="chart2">
+		Front-End<span><span style="width:70%"/></span>
+	</div>
+	<div class="chart2">
+		<div>Back-End</div><span><span style="width:30%"/></span>
+	</div>
+	<div class="chart2">
+		<div>C++</div><span><span style="width:50%"/></span>
+	</div>
+
+	<div class="chart2">
+		<div>Python</div><span><span style="width:20%"/></span>
+	</div>
+</div>
+<!------------------------ Table ------------------------>
+<div class="full">
+<h4>Table</h4>
+	<table>
+		<tbody>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+				<th>GPA</th>
+			</tr>
+			<tr>
+				<td>Mohab</td>
+				<td>M.</td>
+				<td>19</td>
+				<td>1.5</td>
+			</tr>
+			<tr>
+				<td>Adam</td>
+				<td>Smith</td>
+				<td>22</td>
+				<td>3.8</td>
+			</tr>
+			<tr>
+				<td>Adam</td>
+				<td>Smith</td>
+				<td>23</td>
+				<td>2.7</td>
+			</tr>
+			<tr>
+				<td>Adam</td>
+				<td>Smith</td>
+				<td>25</td>
+				<td>2.2</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!------------------------ Tabs ------------------------>
+<div class="full">
+<h4>Tabs</h4>
+	<div class="tab">
+		<ul>
+			<li class="tabicon active">
+				<a onclick="showTab(0)">One</a>
+			</li>
+			<li class="tabicon">
+				<a onclick="showTab(1)">Two</a>
+			</li>
+			<li class="tabicon">
+				<a onclick="showTab(2)">Three</a>
+			</li>
+		</ul>
+		
+		<div class="tabcontent">
+		  <h3>Title</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec diam pellentesque, laoreet arcu vel, semper enim. Nunc non leo accumsan nunc feugiat commodo. Proin mollis fringilla justo, non dictum libero tincidunt quis. In hac habitasse platea dictumst.</p>
+		</div>
+		<div class="tabcontent">
+		  <h3>Title</h3>
+		  <p>In tortor diam, viverra ut scelerisque at, facilisis non odio. Donec eu feugiat metus, a tincidunt eros. Nunc quis elementum arcu, eu maximus dui. </p>
+		</div>
+		<div class="tabcontent">
+		  <h3>Title</h3>
+		  <p>Etiam sodales dui vel elit sagittis porttitor. Vivamus ullamcorper nisl sed lectus sodales euismod. Donec ut ipsum ac urna gravida tempor quis et sapien. Sed et eleifend dolor. Sed condimentum erat eget ipsum condimentum, at ornare magna auctor. Sed pulvinar aliquet enim, eget tincidunt nulla euismod a. Nunc suscipit pulvinar tristique. Nulla leo lacus, mattis id bibendum sit amet, sodales at sem. Nullam tempor orci dui, nec lacinia arcu porttitor quis.</p>
+		</div>
+	</div>
+</div>
+<!------------------------ Accordion ------------------------>
+<div class="full">
+	<h4>Accordion</h4>
+	
+	<button class="accordion">Title 1</button>
+	<div class="content">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec diam pellentesque, laoreet arcu vel, semper enim. Nunc non leo accumsan nunc feugiat commodo. Proin mollis fringilla justo, non dictum libero tincidunt quis. In hac habitasse platea dictumst.</p>
+	</div>
+	
+	<button class="accordion">Title 2</button>
+	<div class="content">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec diam pellentesque, laoreet arcu vel, semper enim. Nunc non leo accumsan nunc feugiat commodo. Proin mollis fringilla justo, non dictum libero tincidunt quis. In hac habitasse platea dictumst.</p>
+	</div>
+	
+	<button class="accordion">Title 3</button>
+	<div class="content">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec diam pellentesque, laoreet arcu vel, semper enim. Nunc non leo accumsan nunc feugiat commodo. Proin mollis fringilla justo, non dictum libero tincidunt quis. In hac habitasse platea dictumst.</p>
+	</div>
+</div>	
+<!------------------------ Blockquotes ------------------------>
+<div class="full">
+<h4>Blockquotes</h4>
+	<blockquote>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec fermentum enim, eget vestibulum nibh. Donec vitae gravida risus. Nunc tincidunt vitae tortor pellentesque laoreet. Fusce eleifend orci ut dolor vulputate.</p>
+		<cite>- Adam Smith</cite>
+	</blockquote>
+</div>
+
+
+
+<!------------------------ Panels ------------------------>
+<div class="full">
+	<h4>Panels</h4>
+	<div class="panel">
+		<div class="head">Panel Heading</div>
+		<div class="body">Panel Body</div>
+	</div>
+</div>
+<!------------------------ Modal Box ------------------------>
+<div class="full">
+	<h4>Modal Box</h4>
+	<button id="modal-btn" class="color-info">Modal Box</button>
+	<div id="modal">
+		<div class="head">Modal Header</div>
+		<div class="body">
+			<p>Hello World !!</p>
+			<p>Other text here...</p>
+		</div>
+	</div>
+
+	<button id="img-modal-btn" class="color-info">Image Modal</button>
+	<div id="img-modal">
+			<img src="https://i.imgur.com/5vLFVQJ.jpg" alt="This alt for the image">
+			<span></span>
+	</div>
+
+
+	<!------------------------ Gallery ------------------------>
+	<h4>Gallery</h4>
+	<div id="gallery">
+		<img src="https://i.imgur.com/5vLFVQJ.jpg" onclick="gallery(0)" alt="Wooow">
+		<img src="https://i.imgur.com/ERtO979.jpg" onclick="gallery(1)" alt="Flathead Lake, MT">
+		<img src="https://i.imgur.com/yoiN6Kz.jpg" onclick="gallery(2)" alt="Rocky Ford Spillway. Manhattan, KS.">
+		<img src="https://i.imgur.com/LtliN6Y.jpg" onclick="gallery(3)" alt="Punchbowl Falls, Oregon, USA">
+		
+	</div>
+	<div id="gallery-modal">
+		<img id="gallery-img">
+		<a class="prev" onclick="galleryshow(-1)">&#10094;</a>
+		<a class="next" onclick="galleryshow(1)">&#10095;</a>
+		<span></span>
+	</div>
+</div>
+
+<!------------------------ Notifications ------------------------>
+<div class="full">
+	<div class="color-default" style="width:100%;">Default</div>
+	<div class="color-danger" style="width:100%;">Danger</div>
+	<div class="color-info" style="width:100%;">Info</div>
+	<div class="color-primary" style="width:100%;">Primary</div>
+	<div class="color-secondary"style="width:100%;">Secondary</div>
+	<div class="color-success" style="width:100%;">Success</div>
+	<div class="color-warning" style="width:100%;">Warning</div>
+<!------------------------ Buttons ------------------------>
+	<h4>Buttons</h4>
+	<button class="color-default">Default</button>
+	<button class="color-danger">Danger</button>
+	<button class="color-info">info</button>
+	<button class="color-primary">primary</button>
+	<button class="color-secondary">secondary</button>
+	<button class="color-success">success</button>
+	<button class="color-warning">warning</button>
+<!------------------------ Pagination ------------------------>
+	<h4>Pagination</h4>
+	<div class="pagination clearfix">
+		<ul>
+			<li><a href="#">«</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">»</a></li>
+		</ul>
+	</div>
+
+	<!------------------------ Dropdowns ------------------------>
+	<h4>Dropdowns</h4>
+	<div class="dropdown">
+		<button id="dropdown-btn" class="color-info" onclick="showdropdown()">Click</button>
+		<div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div>
+
+	<div class="dropdown">
+		<button id="dropdown-hover" class="color-info">Hover</button>
+		<div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div>
+
+	<!------------------------ Snackbar ------------------------>
+	<h4>Snackbar</h4>
+	<div id="snackbar">
+		<button class="color-info" onclick="showSnackbar()">Snackbar</button>
+		<span>Snackbar's text goes here</span>
+	</div>
+
+	<!------------------------ Loader ------------------------>
+	<h4>Loader</h4>
+	<div class="loader"><span/><span/><span/><span/><span/><span/></div>
+	<div class="loader2"></div>
+
+	<!------------------------ Switch ------------------------>
+	<h4>Switch</h4>
+	<label class="switch">
+		<input type="checkbox"><span/>
+	</label>
+	<label class="switch2">
+		<input type="checkbox"><span/>
+	</label>
+</div>
+
+</body>
+<script src="woo.js"></script>
+
+</html>
+
